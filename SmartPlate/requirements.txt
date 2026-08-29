@@ -1,9 +1,37 @@
+# ============================================================
+# SMARTPLATE - COMPLETE PROJECT REQUIREMENTS
+# ============================================================
+# Data Mining, Data Analysis, Machine Learning, Jupyter Notebook
+# ============================================================
+
+# Data Handling
 pandas
 numpy
+
+# Data Visualization
 matplotlib
 seaborn
+
+# Machine Learning
 scikit-learn
 mlxtend
+
+# Model Saving / Loading
 joblib
+
+# Excel File Support
 openpyxl
+
+# Jupyter Notebook
 jupyter
+notebook
+ipykernel
+
+# Statistical / Scientific Computing
+scipy
+
+# Optional Interactive Visualization
+plotly
+
+# Optional Dashboard
+streamlit
