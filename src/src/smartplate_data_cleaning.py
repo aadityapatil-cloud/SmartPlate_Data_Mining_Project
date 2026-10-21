@@ -34,12 +34,12 @@ try:
     # Read the CSV file
     df = pd.read_csv(INPUT_FILE)
 
-    print("\n✅ Dataset loaded successfully.")
+    print("\n Dataset loaded successfully.")
     print("Original Dataset Shape:", df.shape)
 
 except FileNotFoundError:
 
-    print("\n❌ ERROR: Dataset file not found.")
+    print("\n ERROR: Dataset file not found.")
     print("Please check this path:")
     print(INPUT_FILE)
 
@@ -129,7 +129,7 @@ for column in numeric_columns:
             median_value
         )
 
-print("\n✅ Numeric missing values handled.")
+print("\n Numeric missing values handled.")
 
 
 # ============================================================
@@ -151,7 +151,7 @@ for column in categorical_columns:
                 mode_value[0]
             )
 
-print("✅ Categorical missing values handled.")
+print(" Categorical missing values handled.")
 
 
 # ============================================================
@@ -194,7 +194,7 @@ for column in categorical_columns:
         .str.strip()
     )
 
-print("\n✅ Extra spaces removed.")
+print("\n Extra spaces removed.")
 
 
 # ============================================================
@@ -211,7 +211,7 @@ for column in categorical_columns:
 
     df[column] = df[column].str.title()
 
-print("✅ Text values standardized.")
+print(" Text values standardized.")
 
 
 # ============================================================
@@ -264,7 +264,7 @@ for column in numeric_columns:
             df[column].median()
         )
 
-print("\n✅ Negative values handled.")
+print("\n Negative values handled.")
 
 
 # ============================================================
@@ -281,11 +281,11 @@ if "Date" in df.columns:
         errors="coerce"
     )
 
-    print("✅ Date column converted to datetime.")
+    print(" Date column converted to datetime.")
 
 else:
 
-    print("ℹ️ Date column not found.")
+    print(" Date column not found.")
 
 
 # ============================================================
@@ -385,7 +385,7 @@ print("\n" + "=" * 70)
 print("CLEANED DATASET SAVED")
 print("=" * 70)
 
-print("✅ Cleaned dataset saved successfully.")
+print(" Cleaned dataset saved successfully.")
 print("Output File:")
 print(OUTPUT_FILE)
 
@@ -419,7 +419,7 @@ if (
 ):
 
     print("\n" + "=" * 70)
-    print("✅ DATA CLEANING PASSED")
+    print(" DATA CLEANING PASSED")
     print("=" * 70)
 
     print(

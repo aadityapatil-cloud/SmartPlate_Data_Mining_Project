@@ -42,9 +42,9 @@ missing_columns = [
 ]
 
 if len(missing_columns) == 0:
-    print("✅ All required columns are available.")
+    print(" All required columns are available.")
 else:
-    print("❌ Missing columns:")
+    print(" Missing columns:")
     print(missing_columns)
 
 
@@ -186,8 +186,8 @@ df['Profit_Per_Sold_Unit'] = np.where(
     0
 )
 
-print("✅ Net_Profit created")
-print("✅ Profit_Per_Sold_Unit created")
+print(" Net_Profit created")
+print(" Profit_Per_Sold_Unit created")
 
 print(
     df[
@@ -451,10 +451,10 @@ if 'Date' in df.columns:
         df['Weekday_Number'] >= 5
     ).astype(int)
 
-    print("✅ Date features created.")
+    print(" Date features created.")
 
 else:
-    print("ℹ️ Date column is not available.")
+    print(" Date column is not available.")
     print("Date-based features were skipped.")
 
 
@@ -473,17 +473,17 @@ if 'Actual_Demand' in df.columns:
             0
         )
 
-        print("✅ Demand_Per_Student created.")
+        print(" Demand_Per_Student created.")
 
     else:
         print(
-            "ℹ️ Number_of_Students column "
+            " Number_of_Students column "
             "is not available."
         )
 
 else:
     print(
-        "ℹ️ Actual_Demand column is not available."
+        " Actual_Demand column is not available."
     )
 
 
@@ -693,7 +693,7 @@ df.to_csv(
 )
 
 print("=" * 70)
-print("✅ FEATURE ENGINEERING COMPLETED")
+print(" FEATURE ENGINEERING COMPLETED")
 print("=" * 70)
 
 print(
@@ -726,4 +726,4 @@ print(df.isnull().sum().sum())
 print("\nDuplicate Rows:")
 print(df.duplicated().sum())
 
-print("\n✅ Feature Engineering Phase Completed.")
+print("\n Feature Engineering Phase Completed.")

@@ -20,11 +20,11 @@ def validate_dataset(file_path):
 
         df = pd.read_csv(file_path)
 
-        print("\n✅ Dataset loaded successfully.")
+        print("\n Dataset loaded successfully.")
 
     except FileNotFoundError:
 
-        print("\n❌ ERROR: Dataset file not found.")
+        print("\n ERROR: Dataset file not found.")
         print("Check the file path:")
         print(file_path)
 
@@ -108,7 +108,7 @@ def validate_dataset(file_path):
     if total_missing == 0:
 
         print(
-            "✅ PASS: No missing values."
+            " PASS: No missing values."
         )
 
     else:

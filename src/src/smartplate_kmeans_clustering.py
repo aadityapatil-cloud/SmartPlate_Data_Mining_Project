@@ -45,12 +45,12 @@ try:
 
     df = pd.read_csv(INPUT_FILE)
 
-    print("\n✅ Dataset loaded successfully.")
+    print("\n Dataset loaded successfully.")
     print("Dataset Shape:", df.shape)
 
 except FileNotFoundError:
 
-    print("\n❌ ERROR: Dataset file not found.")
+    print("\n ERROR: Dataset file not found.")
     print(INPUT_FILE)
 
     raise SystemExit
@@ -102,14 +102,14 @@ missing_features = [
 
 if missing_features:
 
-    print("❌ Missing features:")
+    print(" Missing features:")
     print(missing_features)
 
     raise SystemExit
 
 else:
 
-    print("✅ All required features are available.")
+    print(" All required features are available.")
 
     for column in features:
         print("-", column)
@@ -137,7 +137,7 @@ print(X.isnull().sum())
 # Replace missing values with median values
 X = X.fillna(X.median())
 
-print("\n✅ Missing values handled.")
+print("\n Missing values handled.")
 
 
 # ============================================================
@@ -155,7 +155,7 @@ print("\n" + "=" * 70)
 print("FEATURE SCALING")
 print("=" * 70)
 
-print("✅ Features standardized successfully.")
+print(" Features standardized successfully.")
 
 
 # ============================================================
@@ -476,7 +476,7 @@ print("CLUSTERED DATASET SAVED")
 print("=" * 70)
 
 print(
-    "✅ File saved successfully:"
+    " File saved successfully:"
 )
 
 print(
@@ -517,5 +517,5 @@ print(
 )
 
 print("\n" + "=" * 70)
-print("✅ K-MEANS CLUSTERING COMPLETED")
+print(" K-MEANS CLUSTERING COMPLETED")
 print("=" * 70)
